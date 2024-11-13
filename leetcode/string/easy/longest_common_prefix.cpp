@@ -12,6 +12,7 @@ public:
         if (strs.empty()) {
             return "";
         } else {
+            // i starts at 1 because we are starting from the second string till the last, except for the first which is the prefix
             for (int i = 1; i < strs_size; ++i) {
                 while (strs[i].find(prefix) != 0) {
                     prefix = prefix.substr(0, prefix.size() - 1);
