@@ -1,5 +1,7 @@
 #include <stack>
 
+using std::stack;
+
 class Solution {
 public:
     bool isValid(string s) {
